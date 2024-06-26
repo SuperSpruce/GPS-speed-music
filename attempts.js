@@ -57,7 +57,7 @@ options = {
 function success(position) {
     // Get speed here
     msSpeed = position.coords.speed;
-    accuracyDisplay.innerHTML = position.coords.accuracy;
+    accuracyDisplay.innerHTML = position.coords.accuracy.toFixed(1);
     if(msSpeed === null) {
         console.log(">:(");
         msSpeed = 21.74224;
