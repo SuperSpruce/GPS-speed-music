@@ -1,0 +1,16 @@
+.body {
+    background-color: #111111;
+    color: #dddddd;
+}
+
+.big {
+    font-size: 72px;
+}
+
+#playAudio {
+    font-size: 72px;
+}
+
+.slider100 {
+    width: 100%;
+}
