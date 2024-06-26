@@ -52,7 +52,7 @@ var options;
 options = {
     enableHighAccuracy: true,
     timeout: 2000,
-    maximumAge: 0,
+    maximumAge: 6000,
 };
 function success(position) {
     // Get speed here
