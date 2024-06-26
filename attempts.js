@@ -69,4 +69,5 @@ function success(position) {
 }
 function error() {
     console.log(":(");
+    accuracyDisplay.innerHTML = "Please work";
 }
