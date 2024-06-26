@@ -2,6 +2,7 @@ var audio = document.getElementById("GalaxyCollapse");
 var musicPicker = document.getElementById("musicPicker");
 var percentDisplay = document.getElementById("percentage");
 var mphDisplay = document.getElementById("mphSpeed");
+var accuracyDisplay = document.getElementById("accuracy");
 var slider = document.getElementById("myRange");
 var msSpeed = 21.74224;
 var playbackSpeed = 1;
@@ -50,12 +51,13 @@ var geoID = navigator.geolocation.watchPosition(success, error, options);
 var options;
 options = {
     enableHighAccuracy: true,
-    timeout: 500,
+    timeout: 2000,
     maximumAge: 0,
 };
 function success(position) {
     // Get speed here
     msSpeed = position.coords.speed;
+    accuracyDisplay.innerHTML = position.coords.accuracy;
     if(msSpeed === null) {
         console.log(">:(");
         msSpeed = 21.74224;
